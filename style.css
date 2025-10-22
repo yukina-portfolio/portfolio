@@ -1,0 +1,674 @@
+@charset "UTF-8";
+
+/* The settings to apply to all pages */
+
+html {
+  font-family: "Fredoka", "Zen Maru Gothic", sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 3%;
+}
+
+.flex div {
+  flex: 1;
+}
+
+.align {
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  color: white;
+  font-size: 5rem;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%,-50%);
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+.big {
+  font-size: 4rem;
+}
+
+.white {
+  color: white;
+}
+
+.border {
+  border-bottom: 3px dotted white;
+  margin-bottom: 3%;
+}
+
+.updown {
+  margin: 3% 0;
+}
+
+.updown2 {
+  margin: 5% 0;
+}
+
+.bottom {
+  margin-bottom: 3%;
+}
+
+.bottom2 {
+  margin-bottom: 5%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 5%;
+}
+
+/* Apply to all pages ‐ header */
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu div {
+  width: 50%;
+}
+
+.menu div:first-child {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1%;
+  margin-left: 1%;
+}
+
+.menu div:last-child {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8%;
+}
+
+.logo {
+  width: 7%;
+  height: auto;
+}
+
+header {
+  position: relative;
+}
+
+header nav ul {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10%;
+  list-style-type: none;
+}
+
+/* Apply to all pages ‐ hero */
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation-name: fadeup;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1);
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeup {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply to all pages ‐ main */
+
+main {
+  margin: 0 5%;
+  margin-bottom: 10%;
+}
+
+main {
+  text-align: center;
+}
+
+.nocenter {
+  text-align: initial;
+}
+
+.content {
+  color: white;
+  font-size: 3rem;
+  border-radius: 50px;
+  box-shadow: 10px 10px black;
+  margin: 5% 40%;
+  padding: 1% 0;
+}
+
+.back {
+  box-shadow: 10px 10px black;
+  border-radius: 100px;
+  padding: 5%;
+  margin: 5% 0;
+}
+
+.back.index, .back.about,.back.contact {
+  margin: 0 15%;
+}
+
+.whiteback {
+  background-color: white;
+  border-radius: 100px;
+  padding: 5%;
+}
+
+.whiteback.index, .pi {
+  padding: 10%;
+}
+
+/* index.html */
+
+.index a:link {
+  color: black;
+  text-decoration: none;
+}
+
+.index a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+.index a:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.index a:active {
+  color: black;
+  text-decoration: none;
+}
+
+.body.index {
+  background: linear-gradient(180deg, #8ED6FF 0%, #40A9FF 60%, #66CFFF 100%);
+  background-color:#40A9FF;
+}
+
+.index.header::before {
+  content: '';
+  position: absolute;
+  width: 100%; height: 55%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(images/cloud.svg);
+  animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.balloon img {
+  animation-name: fuwafuwa;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fuwafuwa {
+  0% {
+    transform:translate(0, 0) rotate(-7deg);
+  }
+  50% {
+    transform:translate(0, -7px) rotate(0deg);
+  }
+  100% {
+    transform:translate(0, 0) rotate(7deg);
+  }
+}
+
+.balloon1 {
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+.balloon2 {
+  animation-timing-function: ease-out;
+  animation-direction: alternate-reverse;
+}
+
+.balloon3 {
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+.balloon4 {
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+}
+
+.index.h1 {
+  text-align: center;
+  top: 10%;
+  left: 50%;
+}
+
+.back.index, .content.index {
+  background-color: tomato;
+}
+
+.skill {
+  background-color: tomato;
+  border-radius: 50px;
+  margin: 0;
+  padding: 3%;
+  width: 100%;
+}
+
+.drawing2 {
+  border-radius: 50px;
+}
+
+/* about.html */
+
+.body.about {
+  background-color: #ffb347;
+}
+
+.hero.about {
+  background-image: url(images/sunset.svg);
+}
+
+.crow {
+  position: absolute;
+  background-repeat: no-repeat;
+  width: 5%;
+  height: 5%;
+  left: -10%;
+  animation: fly 10s linear infinite;
+}
+
+@keyframes fly {
+  0%   { left: -10%; top: 100px; }
+  50%  { left: 50%; top: 200px; }
+  100% { left: 100%; top: 150px; }
+}
+
+.content.about, .back.about, .back.philippines {
+  background-color: forestgreen;
+}
+
+.border.about {
+  border-bottom: 3px dotted forestgreen;
+  display: inline-block;
+}
+
+.circle {
+  display: inline-block;
+  border: 3px dotted forestgreen;
+  border-radius: 50px;
+  padding: 5%;
+}
+
+/* works.html */
+
+.body.works {
+  background: linear-gradient(180deg, #0B1D39 0%, #0F2C55 50%, #1A3C7D 100%);
+  position: relative;
+}
+
+.hero.works {
+  background-image: url(images/moon.svg);
+}
+
+.logo.works {
+  top: 0.5%;
+}
+
+.body.works::before, .body.contact::before {
+  content: '';
+  position: fixed;
+  width: 100%; height: 100%;
+  background:
+  radial-gradient(circle at 15% 25%, rgba(255,250,200,0.8) 0%, rgba(255,250,200,0) 0.4%),
+  radial-gradient(circle at 25% 60%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 0.35%),
+  radial-gradient(circle at 35% 40%, rgba(255,255,220,0.9) 0%, rgba(255,255,220,0) 0.3%),
+  radial-gradient(circle at 45% 75%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 0.25%),
+  radial-gradient(circle at 55% 20%, rgba(255,250,220,0.7) 0%, rgba(255,250,220,0) 0.4%),
+  radial-gradient(circle at 65% 50%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 0.35%),
+  radial-gradient(circle at 75% 80%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 0.4%),
+  radial-gradient(circle at 85% 30%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 0.3%),
+  radial-gradient(circle at 95% 60%, rgba(255,255,220,0.9) 0%, rgba(255,255,220,0) 0.35%);
+  z-index: -1;
+  animation: twinkle 2.5s infinite ease-in-out;
+}
+
+.body.works::after, .body.contact::after {
+  content: '';
+  position: fixed;
+  width: 100%; height: 100%;
+  background:
+  radial-gradient(circle at 10% 5%, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 0.25%),
+  radial-gradient(circle at 20% 40%, rgba(255,255,220,0.7) 0%, rgba(255,255,220,0) 0.3%),
+  radial-gradient(circle at 30% 70%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 0.35%),
+  radial-gradient(circle at 50% 20%, rgba(255,250,220,0.8) 0%, rgba(255,250,220,0) 0.3%),
+  radial-gradient(circle at 60% 80%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 0.25%),
+  radial-gradient(circle at 70% 50%, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 0.35%),
+  radial-gradient(circle at 80% 30%, rgba(255,255,220,0.8) 0%, rgba(255,255,220,0) 0.3%),
+  radial-gradient(circle at 90% 75%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 0.25%);
+  z-index: -1;
+  animation: twinkle 4s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.9; }
+  50%      { opacity: 0.4; }
+}
+
+.content.works {
+  color: black;
+  background-color: yellow;
+}
+
+.click {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.click:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+
+.back.works {
+  background-color: yellow;
+}
+
+.laptop {
+  padding: 20%;
+}
+
+/* contact.html */
+
+.body.contact {
+  background: linear-gradient(to top, #ffb347 0%, #ffcc70 30%, #ffd9a6 60%, #87ceeb 100%);
+  background-color: #ffb347;
+}
+
+.contact.h1 {
+  text-align: center;
+  top: 150px;
+  left: 50%;
+}
+
+.contact h3 {
+  color: white;
+}
+
+.content.contact {
+  background-color: coral;
+}
+
+.back.contact {
+  background-color: coral;
+  border-radius: 50px;
+  padding: 10%;
+}
+
+input, textarea {
+  background-color: white;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+textarea {
+  height: 200px;
+}
+
+button {
+  color: coral;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 0 auto;
+  display: block;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.sunrise {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -2;
+}
+
+/* Apply to all pages ‐ footer */
+
+footer {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  width: 100%; height: 100%;
+  background-image: url(images/seedling.svg);
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  background-size: 80% auto;
+  animation: swayTop 5s ease-in-out infinite alternate;
+  transform-origin: bottom center;
+}
+
+@keyframes swayTop {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(1deg); }
+  50%  { transform: rotate(-1deg); }
+  75%  { transform: rotate(0.5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.footer-img {
+  position: absolute;
+  bottom: 0;
+}
+
+footer p {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Mobile support */
+@media(max-width: 767px) {
+  /* The settings to apply to all pages */
+
+  html {
+    font-size: clamp(12px, 2vw, 18px);
+  }
+
+  .flex, nav ul li {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .flex div {
+    flex: initial;
+  }
+
+  h1 {
+    font-size: 5rem;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .border {
+    border-bottom: 2px dotted white;
+  }
+
+  /* Apply to all pages ‐ header */
+
+  nav ul li {
+    font-size: 1rem;
+  }
+
+  .menu div:last-child {
+    margin-right: 13%;
+  }
+
+  /* Apply to all pages ‐ main */
+
+  .content {
+    margin: 5% 25%;
+  }
+
+  .back, .whiteback {
+    border-radius: 50px;
+  }
+
+  .back.index, .back.about {
+    margin: 0;
+  }
+
+  /* index.html */
+
+  .balloon1, .balloon4 {
+    width: 15%;
+    height: 15%;
+  }
+
+  .balloon2 {
+    width: 10%;
+    height: 10%;
+  }
+
+  .balloon3 {
+    width: 20%;
+    height: 20%;
+  }
+
+  .h1.index {
+    top: 30%;
+  }
+
+  .skill {
+    padding: 10%;
+  }
+
+  .skills {
+    margin: 0 20%;
+  }
+
+  .drawing {
+    width: 50%;
+  }
+
+   /* about.html */
+
+  .border.about {
+    border-bottom: 2px dotted forestgreen;
+  }
+
+  .circle {
+    border: 2px dotted forestgreen;
+  }
+
+   /* works.html */
+
+  .line {
+    border-radius: 30px;
+  }
+
+  .pi {
+    width: 300px;
+    height: auto;
+    padding: 5%;
+    border-radius: 30px;
+  }
+
+  .laptop {
+    height: auto;
+    padding: 30%;
+  }
+  
+  .movie {
+    width: 100%;
+  }
+
+  /* Apply to all pages ‐ footer */
+
+  footer::before {
+    background-position: center 93%;
+  }
+
+  .moon {
+    height: 30%;
+  }
+}
