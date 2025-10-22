@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.23 530.07">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #040000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-2 {
+        fill: #e60012;
+      }
+
+      .cls-3 {
+        fill: #e8380d;
+      }
+    </style>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <path class="cls-1" d="M214.23,394.19c3.61,16.96-2.25,18.21,1.36,35.17,3.61,16.96,9.48,15.71,13.1,32.67s-2.25,18.21,1.36,35.17,9.48,15.71,13.1,32.67"/>
+    <ellipse class="cls-2" cx="167.12" cy="185.43" rx="167.12" ry="185.43"/>
+    <polygon class="cls-2" points="243.94 388.68 184.32 404.89 177.19 351.14 221.25 339.16 243.94 388.68"/>
+    <ellipse class="cls-3" cx="284.13" cy="164.01" rx="27.41" ry="50.03" transform="translate(-11.35 21.47) rotate(-4.24)"/>
+    <ellipse class="cls-3" cx="284.13" cy="248.98" rx="18.72" ry="12.24" transform="translate(5.1 503.65) rotate(-83.61)"/>
+  </g>
+</svg>
