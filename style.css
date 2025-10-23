@@ -560,7 +560,7 @@ footer p {
 
   .flex, nav ul li {
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 3px;
   }
 
   .flex div {
@@ -600,6 +600,10 @@ footer p {
 
   /* index.html */
 
+  .balloon {
+    gap: 30px;
+  }
+
   .balloon1, .balloon4 {
     width: 15%;
     height: 15%;
@@ -624,6 +628,7 @@ footer p {
   }
 
   .skills {
+    gap: 15px;
     margin: 0 20%;
   }
 
@@ -639,6 +644,10 @@ footer p {
 
   .border.about {
     border-bottom: 2px dotted forestgreen;
+  }
+
+  .flex.about {
+    margin: 0 10%;
   }
 
   .circle {
