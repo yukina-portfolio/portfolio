@@ -22,16 +22,11 @@ body {
 .flex {
   display: flex;
   justify-content: center;
-  align-items: stretch;
   gap: 3%;
 }
 
 .flex div {
   flex: 1;
-}
-
-.align {
-  align-items: center;
 }
 
 h1 {
@@ -59,33 +54,6 @@ h3 {
   color: white;
 }
 
-.border {
-  border-bottom: 3px dotted white;
-  margin-bottom: 3%;
-}
-
-.updown {
-  margin: 3% 0;
-}
-
-.updown2 {
-  margin: 5% 0;
-}
-
-.bottom {
-  margin-bottom: 3%;
-}
-
-.bottom2 {
-  margin-bottom: 5%;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  padding: 5%;
-}
-
 /* Apply to all pages ‐ header */
 
 a:link {
@@ -108,15 +76,22 @@ a:active {
   text-decoration: none;
 }
 
+header {
+  position: relative;
+}
+
+nav ul {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10%;
+  list-style-type: none;
+}
+
 .menu {
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.menu div {
-  width: 50%;
 }
 
 .menu div:first-child {
@@ -133,19 +108,8 @@ a:active {
 }
 
 .logo {
-  width: 7%;
+  width: 15%;
   height: auto;
-}
-
-header {
-  position: relative;
-}
-
-header nav ul {
-  font-size: 1.5rem;
-  display: flex;
-  gap: 10%;
-  list-style-type: none;
 }
 
 /* Apply to all pages ‐ hero */
@@ -179,7 +143,6 @@ header nav ul {
 
 main {
   margin: 0 5%;
-  margin-bottom: 10%;
 }
 
 main {
@@ -195,7 +158,7 @@ main {
   font-size: 3rem;
   border-radius: 50px;
   box-shadow: 10px 10px black;
-  margin: 5% 40%;
+  margin: 5% 38%;
   padding: 1% 0;
 }
 
@@ -203,7 +166,6 @@ main {
   box-shadow: 10px 10px black;
   border-radius: 100px;
   padding: 5%;
-  margin: 5% 0;
 }
 
 .back.index, .back.about,.back.contact {
@@ -216,11 +178,12 @@ main {
   padding: 5%;
 }
 
-.whiteback.index, .pi {
-  padding: 10%;
-}
-
 /* index.html */
+
+.body.index {
+  background: linear-gradient(180deg, #8ED6FF 0%, #40A9FF 60%, #66CFFF 100%);
+  background-color:#40A9FF;
+}
 
 .index a:link {
   color: black;
@@ -240,11 +203,6 @@ main {
 .index a:active {
   color: black;
   text-decoration: none;
-}
-
-.body.index {
-  background: linear-gradient(180deg, #8ED6FF 0%, #40A9FF 60%, #66CFFF 100%);
-  background-color:#40A9FF;
 }
 
 .index.header::before {
@@ -306,20 +264,30 @@ main {
   left: 50%;
 }
 
-.back.index, .content.index {
+.back.index, .content.index, .skill {
   background-color: tomato;
 }
 
-.skill {
-  background-color: tomato;
+.whiteback.index {
+  padding: 10%;
+}
+
+.whiteback.index h3 {
+  margin-bottom: 5%;
+}
+
+.skills div, .skill img {
   border-radius: 50px;
-  margin: 0;
+}
+
+.skill {
   padding: 3%;
   width: 100%;
 }
 
-.drawing2 {
-  border-radius: 50px;
+.border {
+  border-bottom: 3px dotted white;
+  margin-bottom: 10%;
 }
 
 /* about.html */
@@ -347,20 +315,29 @@ main {
   100% { left: 100%; top: 150px; }
 }
 
-.content.about, .back.about, .back.philippines {
+.content.about, .back.about, .back.green {
   background-color: forestgreen;
+}
+
+.green {
+  margin-top: 5%;
+}
+
+.green div {
+  margin-top: 3%;
 }
 
 .border.about {
   border-bottom: 3px dotted forestgreen;
+  margin-bottom: 3%;
   display: inline-block;
 }
 
 .circle {
-  display: inline-block;
   border: 3px dotted forestgreen;
   border-radius: 50px;
   padding: 5%;
+  display: inline-block;
 }
 
 /* works.html */
@@ -424,8 +401,8 @@ main {
 }
 
 .click {
+  margin: 3% 0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
 }
 
 .click:hover {
@@ -435,6 +412,17 @@ main {
 
 .back.works {
   background-color: yellow;
+  margin-top: 5%;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 5%;
+}
+
+.pi {
+  padding: 10%;
 }
 
 .laptop {
@@ -455,6 +443,10 @@ main {
   border-radius: 10px;
 }
 
+.summary, .summary p {
+  margin-top: 3%;
+}
+
 /* contact.html */
 
 .body.contact {
@@ -468,18 +460,18 @@ main {
   left: 50%;
 }
 
-.contact h3 {
-  color: white;
-}
-
 .content.contact {
   background-color: coral;
 }
 
+.contact h3 {
+  color: white;
+}
+
 .back.contact {
   background-color: coral;
-  border-radius: 50px;
   padding: 10%;
+  margin-bottom: 10%;
 }
 
 input, textarea {
@@ -569,7 +561,7 @@ footer p {
 
   .flex, nav ul li {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 15px;
   }
 
   .flex div {
@@ -581,10 +573,6 @@ footer p {
     top: 15%;
     left: 50%;
     transform: translate(-50%,-50%);
-  }
-
-  .border {
-    border-bottom: 2px dotted white;
   }
 
   /* Apply to all pages ‐ header */
@@ -600,15 +588,15 @@ footer p {
   /* Apply to all pages ‐ main */
 
   .content {
-    margin: 5% 25%;
+    margin: 5% 20%;
+  }
+
+  .back.index, .back.about, .back.contact {
+    margin: 0;
   }
 
   .back, .whiteback {
     border-radius: 50px;
-  }
-
-  .back.index, .back.about {
-    margin: 0;
   }
 
   /* index.html */
@@ -632,12 +620,16 @@ footer p {
     top: 30%;
   }
 
-  .skill {
-    padding: 10%;
+  .border {
+    border-bottom: 2px dotted white;
   }
 
   .skills {
     margin: 0 20%;
+  }
+
+  .skill {
+    padding: 10%;
   }
 
   .drawing {
@@ -661,19 +653,15 @@ footer p {
   }
 
   .pi {
-    width: 300px;
-    height: auto;
-    padding: 5%;
     border-radius: 30px;
+    width: 50%;
+    height: auto;
+    padding: 10%;
   }
 
   .laptop {
     height: auto;
     padding: 30%;
-  }
-  
-  .movie {
-    width: 100%;
   }
 
   /* Apply to all pages ‐ footer */
@@ -682,7 +670,7 @@ footer p {
     background-position: center 93%;
   }
 
-  .moon {
+  .sunrise {
     height: 30%;
   }
 }
