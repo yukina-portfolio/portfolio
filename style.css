@@ -668,8 +668,9 @@ footer p {
   }
 
   .laptop {
+    width: 500px;
     height: auto;
-    padding: 30%;
+    padding: 15%;
   }
 
   /* Apply to all pages ‐ footer */
