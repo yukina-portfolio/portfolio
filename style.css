@@ -92,13 +92,12 @@ nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2%;
 }
 
 .menu div:first-child {
   display: flex;
   justify-content: flex-start;
-  margin-top: 1%;
-  margin-left: 1%;
 }
 
 .menu div:last-child {
