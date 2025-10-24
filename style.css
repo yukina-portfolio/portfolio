@@ -83,6 +83,7 @@ header {
 nav ul {
   font-size: 1.5rem;
   display: flex;
+  justify-content: flex-end;
   gap: 10%;
   list-style-type: none;
 }
@@ -90,24 +91,16 @@ nav ul {
 .menu {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 2%;
 }
 
-.menu div:first-child {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.menu div:last-child {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 8%;
+.menu div {
+  flex: 1;
 }
 
 .logo {
-  width: 15%;
+  width: 8%;
   height: auto;
 }
 
@@ -587,10 +580,6 @@ footer p {
 
   nav ul li {
     font-size: 1rem;
-  }
-
-  .menu div:last-child {
-    margin-right: 13%;
   }
 
   /* Apply to all pages ‐ main */
