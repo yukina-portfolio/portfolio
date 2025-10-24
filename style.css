@@ -326,6 +326,10 @@ main {
   margin-top: 3%;
 }
 
+.flex.about {
+  align-items: center;
+}
+
 .border.about {
   border-bottom: 3px dotted forestgreen;
   margin-bottom: 3%;
@@ -420,12 +424,17 @@ main {
   padding: 5%;
 }
 
+.pi, .laptop {
+  width: 100%;
+  padding: 20%;
+}
+
 .pi {
-  padding: 10%;
+  height: 95%;
 }
 
 .laptop {
-  padding: 20%;
+  height: 85%;
 }
 
 .video {
@@ -656,21 +665,21 @@ footer p {
 
    /* works.html */
 
-  .line {
+  .line, .pi {
     border-radius: 30px;
   }
 
   .pi {
-    border-radius: 30px;
-    width: 50%;
-    height: auto;
     padding: 10%;
   }
 
   .laptop {
-    width: 500px;
-    height: auto;
+    height: 80%;
     padding: 15%;
+  }
+
+  .video {
+    width: 100%;
   }
 
   /* Apply to all pages ‐ footer */
