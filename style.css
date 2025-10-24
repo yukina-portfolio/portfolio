@@ -433,7 +433,7 @@ main {
 .video {
   position: relative;
   width: 50%;
-  margin: 0 auto;
+  margin: 3% auto;
   aspect-ratio: 16 / 9;
 }
 
@@ -577,6 +577,10 @@ footer p {
   }
 
   /* Apply to all pages ‐ header */
+
+  .logo {
+    width: 10%;
+  }
 
   nav ul li {
     font-size: 1rem;
