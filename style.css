@@ -413,7 +413,7 @@ main {
 
 .line {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   padding: 5%;
 }
 
@@ -663,6 +663,7 @@ footer p {
   }
 
   .pi {
+    width: 80%;
     padding: 10%;
   }
 
