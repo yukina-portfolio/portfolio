@@ -319,6 +319,10 @@ main {
   margin-top: 3%;
 }
 
+.stretch {
+  align-items: initial;
+}
+
 .flex.about {
   align-items: center;
 }
