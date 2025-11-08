@@ -675,7 +675,7 @@ footer p {
 
   .laptops {
     grid-template-columns: 1fr;
-    gap: 1px;
+    gap: 10px;
   }
 
   .laptop {
