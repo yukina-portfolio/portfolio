@@ -430,8 +430,14 @@ main {
   height: 95%;
 }
 
+.laptops {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3%;
+}
+
 .laptop {
-  height: 85%;
+  height: 80%;
 }
 
 .video {
