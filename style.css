@@ -673,6 +673,10 @@ footer p {
     padding: 10%;
   }
 
+  .laptops {
+    grid-template-columns: 1fr;
+  }
+
   .laptop {
     height: 80%;
     padding: 15%;
