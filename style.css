@@ -675,10 +675,10 @@ footer p {
 
   .laptops {
     grid-template-columns: 1fr;
+    gap: 1px;
   }
 
   .laptop {
-    height: 80%;
     padding: 15%;
   }
 
